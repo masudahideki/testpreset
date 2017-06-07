@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* ---- Clear Element--- */
+.clear {
+	clear:both;
+}
+
+/*---- clearfix ---*/
+/*------------------------------
+	clearfix
+	(printable version)
+------------------------------*/
+#head,
+#head .container,
+#head .navigation,
+#globalnavi,
+#footer .container,
+#footer .navigation,
+#main,
+.section {
+	/zoom:1;
+}
+
+#head:after,
+#head .container:after,
+#head .navigation:after,
+#globalnavi:after,
+#footer .container:after,
+#footer .navigation:after,
+#main:after,
+.section:after {
+	content: url("../img/common/spacer.gif");
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	/zoom:1;
+}
+
+.clearfix:after {
+	content: url("../img/common/spacer.gif");
+	display: block;
+	clear: both;
+	height: 0;
+}
+/*---- End clearfix ---*/
+

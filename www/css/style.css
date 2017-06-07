@@ -1,0 +1,496 @@
+@charset "UTF-8";
+
+/* Base Element */
+body {
+	background-color: #FFFFFF;
+	color: #333333;
+	font-size: 63%;
+	text-align: center;	
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,Verdana,'ＭＳ Ｐゴシック',Arial,Helvetica,sans-serif;
+	/*word-break: break-all;*/	/*文字コード（ISO-8859-1）のような英語圏の文字コードを使用した場合*/
+}
+
+/* Print style */
+@media print{
+	body {
+		_zoom: 63%;
+		/*
+		IE6.0印刷用サイズ計算式
+		649(印刷での表示幅) ÷ 1024(スクリーンでの表示幅) x 100 = 63（端数切り捨て）
+		*/
+		overflow: visible!important;
+    }
+}
+
+/* ---Layout Style
+----------------------------------------------------- */
+#all {
+	width: 800px;
+	text-align: left;
+	margin: 0 auto;
+	background-color: #EFEFEF;
+}
+
+.entry {
+	float: right;
+	width: 580px;
+	width: 72.5%;
+}
+
+.top .content {
+	float: none;
+	width: 800px;
+	width: 100%;
+}
+/* ---Anchor Link
+----------------------------------------------------- */
+/*.anchor {
+	font-size: 1.2em;
+	line-height:0;
+	display:block;
+	overflow:hidden;
+	height: 0px;
+}*/
+/* ---Text Element
+----------------------------------------------------- */
+/*.caution {
+	font-weight: bold;
+	color: #FF0000;
+}*/
+/* ---Text Detail Element
+----------------------------------------------------- */
+/*.detail {
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+
+.detail a {
+	background: url(img/arrow-detail.gif) no-repeat left center;
+	padding:0 0 0 20px;
+}*/
+/* ---Float Element
+----------------------------------------------------- */
+.cleft {
+	display: block;
+	float: left;
+}
+
+.cright {
+	display: block;
+	float: right;
+}
+/* ---Topic_Path
+----------------------------------------------------- */
+.path {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0 10px 0 0;
+	overflow: hidden;
+	_zoom: 1;
+	clear: both;
+}
+
+.path li {
+	float: left;
+}
+
+.path li span { color: #FFFFFF;}
+.path li a:link {
+	color:#666666;
+}
+.path li a:visited {
+	color:#666666;
+}
+.path li a:hover {
+	color:#666666;
+}
+/* ---Link Element
+----------------------------------------------------- */
+a:link {
+	color:#333333;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#333333;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#333333;
+	text-decoration:none;
+}
+
+/*	RollOverImages by Opacity(css)
+a:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.70;
+	opacity: 0.70;
+}
+*/
+/* --- Header
+----------------------------------------------------- */
+#head {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#head .logo {
+	float: left;
+	display: block;
+	width: 300px;
+}
+
+#head .container {
+	float: right;
+	display: block;
+	width: 500px;
+	background-color: #666666;
+}
+
+#head .container .navigation {
+	float: right;
+	margin: 7px 0 0;
+	max-width: 500px;
+	width: 30em;
+	overflow: hidden;
+	_zoom: 1;
+	background-color: #FF0000;
+}
+
+#head .container .navigation li {
+	padding: 0 5px 0 0;
+	float: left;
+	display: block;
+	font-size: 1.2em;
+}
+
+#head .container .navigation li.sitemap-btn {
+	padding: 0;
+}
+
+#head .container .inquiry {
+	margin: 0;
+	padding: 5px 0 0;
+	text-align: right;
+	clear: both;
+}
+
+#head a:link {
+	text-decoration: underline;
+	color: #333333;
+}
+
+#head a:visited {
+	text-decoration: underline;
+	color: #333333;
+}
+
+#head a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+/* --- Headder_GlobalNavi
+----------------------------------------------------- */
+#globalnavi {
+	background-color: #FFFFFF;
+	width: 800px;
+	margin: 10px 0 0;
+	clear: both;
+}
+
+#globalnavi li {
+	width: 200px;
+	display: block;
+	float: left;
+}
+
+/* --- Left Navigation
+----------------------------------------------------- */
+#navigation {
+	background-color: #666666;
+	float: left;
+	margin: 0;
+	padding: 10px;
+	width: 180px;
+	width: 22.5%;
+}
+
+#navigation dl {
+}
+
+#navigation dl dt {
+}
+
+#navigation dl dd {
+}
+
+#navigation dl dd ul,
+#navigation dl dd ul li,
+#navigation dl dd ul li.btm {
+}
+
+#navigation ul {
+}
+
+#navigation ul li {
+}
+
+#navigation ul li.btm {
+	margin: 0;
+	padding: 0;
+}
+
+#navigation p.banner {
+	text-align: center;
+}
+
+#navigation a:link {
+	text-decoration: underline;
+	color: #333333;
+}
+
+#navigation a:visited {
+	text-decoration: underline;
+	color: #333333;
+}
+
+#navigation a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+/* --- Footer
+----------------------------------------------------- */
+#footer {
+	width: 800px;
+	clear: both;
+	margin: 0 auto;
+}
+
+#footer .container {
+	float: left;
+	width: 530px;
+	text-align: left;
+	background-color: #00FFFF;
+	margin: 0;
+	padding: 0;
+}
+
+#footer ul.navigation {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+#footer ul.navigation li {
+	line-height: 1.5;
+	font-size: 1.2em;
+	border: none;
+	border-left: 1px solid #666666;
+	list-style-type: none;
+	padding: 0 0.5em;
+	display: inline;
+}
+
+#footer ul.navigation li.btm {
+	padding-right: 0.5em;
+	border-right: 1px solid #666666;
+	margin: 0 0 0px;
+}
+/*#footer address {
+	background-color: #FFFFFF;
+	font-style: normal;
+	line-height: 1.5;
+	margin: 10px;
+	padding: 0;
+}*/
+#footer .copyright {
+	float: right;
+	width: 270px;
+	margin: 0;
+	padding: 5px 0;
+	text-align: right;
+	background-color: #FF9900;
+	font-size: 1.2em;
+}
+
+#footer a:link {
+	color: #F00;
+}
+
+#footer a:visited {
+	color: #F00;
+}
+
+#footer a:hover {
+	color: #F00;
+}
+/* --- SiteMap
+----------------------------------------------------- */
+/*.sitemap {
+	margin-top:15px;
+}
+
+.sitemap ul {
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+.sitemap ul li {
+	padding: 2px 0 5px;
+	border-bottom: solid 1px #E4E4E4;
+	background: url(img/arrow04.gif) no-repeat left top;
+}
+
+.sitemap ul li.peak {
+	padding: 0 0 5px 10px;
+	border:none;
+}
+
+.sitemap ul ul {
+	margin: 0 0 0 210px;
+}
+
+.sitemap ul li a {
+	background: url(info/img/s-arrow.gif) no-repeat left top;
+	padding-left: 17px;
+}
+
+.sitemap ul ul li {
+	background:url(img/arrow04.gif) no-repeat left top;
+	margin: 0;
+	padding: 2px 0 5px 0;
+}
+
+.sitemap ul ul li.top {
+	margin: -18px 0 4px 0;
+	width: 100%;
+}
+
+.sitemap ul ul li.bottom {
+	margin-bottom: -4px;
+	border: none;
+}
+
+.sitemap ul ul li.bottom2 {
+	margin-top: -25px;
+	margin-bottom: -8px;
+	width: 280px;
+}*/
+/* --- Common-Table
+----------------------------------------------------- */
+/*.common-table {
+	padding: 0;
+	background-color: #999999;
+}
+
+.common-table th {
+	font-size: 1.2em;
+	font-weight: normal;
+	background-color: #E6E6E6;
+	padding: 5px;
+	text-align: left;
+}
+
+.common-table td {
+	font-size: 1.2em;
+	background-color: #FFFFFF;
+	padding: 5px;
+	line-height: 1.3;
+	vertical-align: top;
+}*/
+/* --- pagetop
+----------------------------------------------------- */
+.pagetop {
+	text-align: right;
+	clear: both;
+}
+
+/* --- entry format
+----------------------------------------------------- */
+/*フォーマット*/
+.section {
+	clear: both;
+	overflow: hidden;
+}
+/*角丸*/
+.column_rc {
+	border: 1px solid #CCC;
+	border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+	box-shadow: 3px 3px 6px #333;
+}
+
+/* --- Top-Page
+----------------------------------------------------- */
+.top .content {
+}
+/* --- Sub-Page
+----------------------------------------------------- */
+.sub .entry p {
+}
+
+/*てすと*/
+.test_sec {
+	background-color: #FFF;
+	width: 90%;
+	padding: 20px;
+	font-size: 14px;	
+}
+
+.test_sec h1 {
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------
+
+	WYSIWYG Editor入力用フォーマット
+	
+----------------------------------------------------- */
+/*text color*/
+.red {color: #F00!important;}
+.blue {color: #00F!important;}
+/*font style*/
+.bold {font-weight: bold!important;}
+.fs16 {	font-size: 16px!important;}
+.fs18 {	font-size: 18px!important;}
+.fs20 {	font-size: 20px!important;}
+/*width*/
+.w200 {	width: 200px!important;}
+.w250 {	width: 250px!important;}
+.w260 {	width: 260px!important;}
+.w270 {	width: 270px!important;}
+.w280 {	width: 280px!important;}
+.w290 {	width: 290px!important;}
+.w300 {	width: 300px!important;}
+/*margin-top*/
+.mt0 {margin-top: 0px!important;}
+.mt10 {margin-top: 10px!important;}
+.mt20 {margin-top: 20px!important;}
+.mt30 {margin-top: 30px!important;}
+/*margin-bottom*/
+.mb0 {margin-bottom: 0px!important;}
+.mb10 {margin-bottom: 10px!important;}
+.mb20 {	margin-bottom: 20px!important;}
+.mb30 {margin-bottom: 30px!important;}
+.mb40 {margin-bottom: 40px!important;}
+.mb50 {margin-bottom: 50px!important;}
+.mb60 {margin-bottom: 60px!important;}
+.mb70 {margin-bottom: 70px!important;}
+.mb80 {margin-bottom: 80px!important;}
+.mb90 {margin-bottom: 90px!important;}
+.mb100 {margin-bottom: 100px!important;}

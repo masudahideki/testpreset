@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- TemplateBeginEditable name="charset" --><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>タイトル</title>
+<meta name="keywords" content="キーワード" />
+<meta name="description" content="ディスクリプション" />
+<!-- TemplateEndEditable -->
+<link href="../css/import.css" rel="stylesheet" type="text/css" media="screen,print,tv" />
+<!-- TemplateBeginEditable name="head_css" --><!-- TemplateEndEditable -->
+<script type="text/javascript" src="../js/lib/jquery.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<!-- TemplateBeginEditable name="head_js" --><!-- TemplateEndEditable -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../js/lib/html5shiv_min.js"></script>
+<![endif]-->
+<!-- TemplateParam name="top_logo" type="boolean" value="true" --><!-- TemplateParam name="sub_logo" type="boolean" value="true" --><!-- TemplateParam name="class-name" type="text" value="" --><!-- TemplateParam name="Topic_Path" type="boolean" value="true" --><!-- TemplateParam name="Side" type="boolean" value="true" -->
+</head>
+<body class="@@(_document['class-name'])@@">
+<div id="all">
+<header id="head">
+	<!-- TemplateBeginEditable name="Summary" --><p class="summary" id="top">サマリーが入ります</p><!-- TemplateEndEditable -->
+	<!-- TemplateBeginIf cond="top_logo" --><h1 class="logo"><a href="http://index.html"><img src="../img/dummy-head-logo.jpg" alt="ロゴが入ります&#13;&#10;ロゴが入ります" width="300" height="60" /></a></h1><!-- TemplateEndIf -->
+	<!-- TemplateBeginIf cond="sub_logo" --><div class="logo"><a href="http://index.html"><img src="../img/dummy-head-logo.jpg" alt="ロゴが入ります&#13;&#10;ロゴが入ります" width="300" height="60" /></a></div><!-- TemplateEndIf -->      	
+	<div class="container">
+		<nav>
+			<ul class="navigation">
+				<li><a href="../index.html">テキストリンクナビ</a></li>
+				<li><a href="../index.html">テキストリンクナビ</a></li>
+				<li class="sitemap-btn"><a href="../info/sitemap.html">サイトマップ</a></li>
+			</ul>			
+		</nav>
+		<p class="inquiry"><img src="../img/dummy-head-eq_navi.jpg" alt="お問い合わせ" width="200" height="30"  /></p>
+	</div><!-- /.container -->	
+	<nav>
+		<ul id="globalnavi">
+			<li><a href="../index.html"><img src="../img/dummy-global-navi01.jpg" alt="グローバルリンク" width="200" height="30" class="imgover" /></a></li>
+			<li><a href="../sub/sub1.html"><img src="../img/dummy-global-navi02.jpg" alt="グローバルリンク" width="200" height="30" class="imgover" /></a></li>
+			<li><a href="../sub/sub2.html"><img src="../img/dummy-global-navi03.jpg" alt="グローバルリンク" width="200" height="30" class="imgover" /></a></li>
+			<li><a href="../sub/sub3.html"><img src="../img/dummy-global-navi04.jpg" alt="グローバルリンク" width="200" height="30" class="imgover" /></a></li>
+		</ul><!-- /#globalnavi -->
+	</nav>
+</header><!-- /header -->
+<!-- TemplateBeginIf cond="Topic_Path" -->
+<ul class="path">	
+	<li><a href="../index.html">HOME</a> &gt; </li>
+	<!-- TemplateBeginEditable name="current_path" --><li><strong>TopicPath</strong></li><!-- TemplateEndEditable -->
+</ul><!-- TemplateEndIf --><!-- /#path -->
+<!-- TemplateBeginEditable name="ContentsArea" -->
+<main id="main" class="entry">
+	<p>テキスト挿入箇所</p>
+</main><!-- /.entry --><!-- TemplateEndEditable -->
+<!-- TemplateBeginIf cond="Side" --><!-- TemplateBeginEditable name="Side_navi" -->
+<div id="navigation">
+	<nav>
+		<dl>
+			<dt>ナビゲーションメニュー01</dt>
+			<dt><a href="../index.html">定義リスト</a></dt>
+			<dd><a href="../index.html">定義リスト詳細</a></dd>
+			<dt><a href="../index.html">定義リスト</a></dt>
+			<dd><a href="../index.html">定義リスト詳細</a>
+				<ul>
+					<li><a href="../index.html">リスト</a></li>
+					<li class="btm"><a href="../index.html">リスト</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</nav>
+	
+	<aside>
+		<ul>
+			<li><a href="../index.html">link-img</a></li>
+			<li><a href="../index.html">link-img</a></li>
+			<li class="btm"><a href="../index.html">link-img</a></li>
+		</ul>
+	</aside>
+	<aside>
+		<p class="banner"> <img src="../bnr.gif" width="88" height="31" alt="仮バナー" /><br />
+		**name**は<br />
+		リンクフリーです。<br />
+		上のバナーをお使いください。</p>
+	</aside>
+</div><!-- TemplateEndEditable --><!-- TemplateEndIf --><!-- /#navigation -->
+<!-- PageTOP -->
+<p class="pagetop"><a href="#top"><img src="../img/dummy-to-top.gif" alt="ページのトップへ" width="100" height="20" /></a></p>
+<footer id="footer">
+	<div class="container">
+		<ul class="navigation">
+			<li><a href="../index.html">フッターリンク</a></li>
+			<li><a href="../index.html">フッターリンク</a></li>
+			<li><a href="../index.html">フッターリンク</a></li>
+			<li><a href="../index.html">フッターリンク</a></li>
+			<li class="btm"><a href="../index.html">フッターリンク</a></li>
+		</ul>
+	</div><!-- /.navigation -->
+	<p class="copyright">Copyright (C) ****** All Rights Reserved.</p>
+</footer><!-- /#footer -->
+</div><!-- /#all -->
+</body>
+</html>
